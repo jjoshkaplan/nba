@@ -1,6 +1,6 @@
 # NBA Player Analysis Project
 
-This project analyzes NBA player statistics to categorize players based on their roles (BATMAN, ROBIN, and ALFRED) and calculates a new performance metric called `NEW`. The project includes data loading, cleaning, processing, modeling, and visualization.
+This project analyzes NBA player statistics to categorize players based on their roles (BATMAN, ROBIN, and ALFRED) and calculates a new performance metric called `ADVANCED`. The project includes data loading, cleaning, processing, modeling, and visualization.
 
 ## Table of Contents
 
@@ -25,11 +25,47 @@ Install the required packages:
  - **pip install pandas**
  - **pip install matplotlib**
 
-## Running the Project
+### Steps
 
-Load the data:
+1. **Clone the repository**:
+   ```
+   git clone https://github.com/jjoshkaplan/nba.git
 
-Ensure the CSV file is placed in the correct path or modify the path in main.py.
+2. **Navigate to the project directory**:
+   ```
+   cd nba
+   
+3. **Create a virtual environment**:
+   ```
+   python -m venv venv
 
-Run the main script:
-python main.py
+### Data Files
+
+You will need an NBA player statistics CSV file to run the analysis. Ensure your CSV file contains the necessary columns such as player names, usage percentages (USG%), PER, TS%, WS, BPM, and VORP. This file can be located at https://www.basketball-reference.com/ and found for any year. Can also analyze the regular season or playoffs!
+
+## Usage
+
+Prepare your CSV data file: Ensure you have the NBA player statistics CSV file ready.
+
+#### Run the analysis:
+
+   ```
+   python main.py --file_path path_to_your_csv_file.csv
+   ```
+#### View the results: 
+
+The script will output the cleaned data and generate visualizations for the top players based on their roles by color.
+
+## File Structure
+
+loader.py: Contains the function to load data from a CSV file.
+
+clean.py: Contains functions to clean the data and assign roles based on USG%.
+
+process_data.py: Contains functions to calculate the new performance metric (ADVANCED).
+
+visualize.py: Contains functions to visualize the data.
+
+main.py: The main script to run the entire analysis.
+
+requirements.txt: Lists the required packages for the project.
