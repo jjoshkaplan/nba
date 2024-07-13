@@ -5,7 +5,10 @@ import pandas as pd
 
 def assign_roles(df):
     """
-    Assign roles based on USG% (Usage Percentage)
+    Assign roles based on USG% (Usage Percentage) percentile across the entire dataframe
+    BATMAN's are top 20% in usage.
+    ROBIN's are next 20% in usage.
+    ALFRED's are last 60% in usage.
     :param df: Dataframe with player stats
     :return: Dataframe with new 'Role' column
     """

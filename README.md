@@ -18,6 +18,8 @@ The NBA Player Analysis Project is designed to:
 3. **Process Data**: Assign roles to players based on usage percentage (USG%) and calculate a new performance metric (`ADVANCED`) using PER, TS%, WS, BPM, and VORP.
 4. **Visualize Data**: Generate scatter plots of the top 15 players in each role, displaying their ADVANCED statistic versus minutes played (MP).
 
+This analysis is meant to assist the user in evaluating players across different roles. In order for a team to be successful, they can't simply rely on their star player. A successful team has different players with different skills playing a variety of roles. 
+
 ## Installation
 
 Install the required packages:
