@@ -1,8 +1,8 @@
-""" Clean data from raw .csv file to remove statistics that will not be used in calculation of a new model"""
+""" Clean data from dataframe to remove unnecessary statistics"""
 
 
 def clean_data(df):
-    """ prepare dataframe for modeling and visualization"""
+    """ Prepare dataframe for modeling and visualization"""
     # Identify unnecessary columns
     columns_to_drop = ['Rk',
                        'Pos',

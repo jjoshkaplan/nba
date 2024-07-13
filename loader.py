@@ -1,6 +1,4 @@
-"""
-load csv data from basketball reference for advanced statistics across any year for regular season or playoffs
-"""
+"""load csv data for advanced NBA statistics across any year for regular season or playoffs"""
 
 import pandas as pd
 

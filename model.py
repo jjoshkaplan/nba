@@ -1,4 +1,4 @@
-""" Assign roles for each player based on USG% and calculate NEW value """
+""" Assign roles for each player based on USG% and calculate Advanced Metric """
 
 import pandas as pd
 
@@ -17,11 +17,11 @@ def assign_roles(df):
     return df
 
 
-def calculate_ADVANCED_value(df):
+def calculate_advanced_value(df):
     """
     Calculate new value based on weighted combination of PER, TS%, WS, BPM, and VORP
     :param df: Dataframe with player stats
-    :return: Dataframe with ADVANCED value
+    :return: Dataframe with Advanced Metric
     """
     # Define weights for each column
     weights = {
@@ -49,7 +49,7 @@ def process_data(df):
     :return: Tuple of processed dataframe and dataframes for each role
     """
     df = assign_roles(df)
-    df = calculate_new_value(df)
+    df = calculate_advanced_value(df)
 
     # Split the dataframe into three based on the Role
     batman_df = df[df['Role'] == 'BATMAN'].sort_values(by='ADVANCED', ascending=False)
